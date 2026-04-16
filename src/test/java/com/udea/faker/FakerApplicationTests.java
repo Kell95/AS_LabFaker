@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class FakerApplicationTests {
-
 	@Autowired
 	DataController dataController;
 	@Test
@@ -53,7 +52,7 @@ class FakerApplicationTests {
 	}
 	@Test
 	void aviationsLength() {
-		Integer aviationsLength = dataController.getRandomnAviation().size();
+		Integer aviationsLength = dataController.getRandomAviation().size();
 		assertEquals(20, aviationsLength);
 	}
 
