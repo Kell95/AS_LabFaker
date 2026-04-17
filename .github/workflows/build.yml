@@ -103,7 +103,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: artifact
-          path: target/faker-0.0.1-SNAPSHOT.jar 
+          path: target/faker.jar 
 
   docker:
     needs: build
