@@ -4,13 +4,13 @@
 
 Se desarrolló una aplicación backend utilizando Spring Boot, la cual expone varios endpoints REST para generar datos aleatorios utilizando la librería Faker.
 
----
+
 
 ### 2. Creación del repositorio
 
 El proyecto fue subido a un repositorio en GitHub, permitiendo el control de versiones y la integración con herramientas de despliegue continuo.
 
----
+
 
 ### 3. Configuración del pipeline CI/CD
 
@@ -28,7 +28,7 @@ Este pipeline realiza automáticamente:
 * Generación del archivo `.jar`
 * Construcción y publicación de la imagen Docker en Docker Hub
 
----
+
 
 ### 4. Creación del contenedor Docker
 
@@ -36,7 +36,7 @@ Se definió un `Dockerfile` para empaquetar la aplicación en un contenedor, uti
 
 Esto permite que la aplicación sea portable y ejecutable en cualquier entorno compatible con Docker.
 
----
+
 
 ### 5. Integración con la nube
 
@@ -44,7 +44,7 @@ Se utilizó la plataforma Render para desplegar la aplicación.
 
 Se configuró el servicio conectando directamente el repositorio de GitHub y seleccionando la rama `main`.
 
----
+
 
 ### 6. Despliegue automático
 
@@ -62,7 +62,7 @@ Cada vez que se realiza un `git push`:
    * construye el contenedor
    * despliega automáticamente la aplicación
 
----
+
 
 ##  Pruebas de ejecución del backend en la nube
 
@@ -80,7 +80,7 @@ Respuesta:
 HEALTH CHECK OK!
 ```
 
----
+
 
 ###  Endpoint de versión
 
@@ -94,7 +94,6 @@ Respuesta:
 The actual version is 1.0.0
 ```
 
----
 
 ###  Endpoint de naciones
 
@@ -105,7 +104,6 @@ https://as-labfaker.onrender.com/nations
 Respuesta:
 Se obtiene un arreglo JSON con datos aleatorios de países, incluyendo nacionalidad, capital, bandera e idioma.
 
----
 
 ### Endpoint de monedas
 
@@ -116,7 +114,7 @@ https://as-labfaker.onrender.com/currencies
 Respuesta:
 Se genera un listado de monedas con nombre y código.
 
----
+
 
 ### Endpoint de aviación
 
@@ -127,7 +125,7 @@ https://as-labfaker.onrender.com/aviation
 Respuesta:
 Se obtiene información aleatoria sobre aeronaves, aeropuertos y datos METAR.
 
----
+
 
 ## Conclusión
 
