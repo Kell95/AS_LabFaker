@@ -68,7 +68,7 @@ Cada vez que se realiza un `git push`:
 
 Una vez desplegada la aplicación, se verificó su correcto funcionamiento accediendo a los endpoints públicos:
 
-### 🔹 Endpoint de verificación (Health Check)
+### Endpoint de verificación (Health Check)
 
 ```
 https://as-labfaker.onrender.com/
